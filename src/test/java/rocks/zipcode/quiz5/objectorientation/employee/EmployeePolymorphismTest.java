@@ -11,7 +11,7 @@ import rocks.zipcode.quiz5.objectorientation.account.Worker;
  * @author leon on 30/12/2018.
  */
 public class EmployeePolymorphismTest {
-    private Employee employee = new Employee();
+    private Object employee = new Employee();
 
     @Test
     public void test1() {
@@ -26,6 +26,6 @@ public class EmployeePolymorphismTest {
 
     @Test(expected = ClassCastException.class)
     public void test3() {
-        Account account = (Account) (Object) employee;
+        Account account = (Account) employee;
     }
 }

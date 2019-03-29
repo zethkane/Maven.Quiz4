@@ -10,7 +10,7 @@ import rocks.zipcode.quiz5.objectorientation.account.Transactable;
  * @author leon on 30/12/2018.
  */
 public class BankAccountPolymorphismTest {
-    BankAccount bankAccount = new BankAccount();
+    Object bankAccount = new BankAccount();
 
     @Test
     public void test1() {

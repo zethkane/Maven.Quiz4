@@ -7,7 +7,7 @@ import org.junit.Test;
  * @author leon on 30/12/2018.
  */
 public class AccountPolymorphismTest {
-    private Account account = new Account();
+    private Object account = new Account();
     @Test
     public void test1() {
         Assert.assertFalse(account instanceof Transactable);
@@ -15,6 +15,6 @@ public class AccountPolymorphismTest {
 
     @Test
     public void test2() {
-        Assert.assertFalse((BankAccount)(Object)account instanceof BankAccount);
+        Assert.assertFalse(account instanceof BankAccount);
     }
 }
