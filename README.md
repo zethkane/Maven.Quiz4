@@ -64,20 +64,20 @@
 * **Description**
 	* The purpose of this class is to create utility methods to be used to assist in the completion of `WaveGenerator`.
 * **Methods to Complete**
-	* `String capitalizeMiddleCharacter(String str)`
-		* return `true`
 	* `String getMiddleCharacter(String string)`
-		* return `true`
-	* `String getMiddleCharacter(String string)`
-		* return `true`
+		* return character at index `string.length()/2` as `String`.
+	* `String capitalizeMiddleCharacter(String string)`
+		* return near-identical `String` with character at index `string.length()/2` capitalized.
 	* `String lowercaseMiddleCharacter(String string)`
-		* return `true`
-	* `Boolean hasDuplicateConsecutiveCharacters(String string)`
-		* return `true`
+		* return near-identical `String` with character at index `string.length()/2` lowercased.
 	* `String invertCasing(String string)`
-		* return `true`
+		* return near-identical `String` with each character's casing inverted: Capital letters become lowercase, lowercase letters become lowercase.
+	* `Boolean hasDuplicateConsecutiveCharacters(String string)`
+		* return `true` if `string` contains two identical characters in adjacent indices.
+	* `Boolean removeDuplicateConsecutiveCharacters(String string)`
+		* return near-identical `String` with each occurrence of duplicate-adjacent characters removed.
 	* `Boolean isIsogram(String string)`
-		* return `true`
+		* return `true` if each `Character` in `string` occurs exactly 1 time.
 
 
 
@@ -134,7 +134,8 @@
 * **Description**
 	* The purpose of this class is to 
 * **Methods to Complete**
-	* `String getName()`
+	* `Long getId()`
+	* `void setId(Long id)`
 
 	
 
@@ -142,7 +143,7 @@
 * **Description**
 	* The purpose of this class is to 
 * **Methods to Complete**
-	* `String getName()`
+	* `void setBalance(Double double)`
 
 
 
@@ -150,15 +151,9 @@
 * **Description**
 	* The purpose of this class is to 
 * **Methods to Complete**
-	* `String getName()`
-
-
-
-### Transactable
-* **Description**
-	* The purpose of this class is to 
-* **Methods to Complete**
-	* `String getName()`
+	* `BankAccount removeBankAccountByIndex(Integer indexNumber)`
+	* `void addBankAccount(BankAccount bankAccount)`
+	* `Boolean containsBankAccount(BankAccount bankAccount)`
 
 
 
@@ -166,18 +161,8 @@
 * **Description**
 	* The purpose of this class is to 
 * **Methods to Complete**
-	* `String getName()`
-
-
-
-### Worker
-* **Description**
-	* The purpose of this class is to 
-* **Methods to Complete**
-	* `String getName()`
-
-
-
+	* `BankAccount getBankAccount()`
+	* `void setBankAccount(BankAccount bankAccount)`
 
 
 
@@ -194,34 +179,15 @@
 
 ## Section 4 - Collections
 
-### Curry
-* **Description**
-	* The purpose of this class is to 
-* **Methods to Complete**
-	* `String getName()`
-
-### Ginger
-* **Description**
-	* The purpose of this class is to 
-* **Methods to Complete**
-	* `String getName()`
-
-### Pepper
-* **Description**
-	* The purpose of this class is to 
-* **Methods to Complete**
-	* `String getName()`
-
-
-### Spice
-* **Description**
-	* The purpose of this class is to 
-* **Methods to Complete**
-	* `String getName()`
-
 
 	
 ### Food
+* **Description**
+	* The purpose of this class is to 
+* **Methods to Complete**
+	* `String getName()`
+
+### Curry, Ginger, Pepper, Spice
 * **Description**
 	* The purpose of this class is to 
 * **Methods to Complete**

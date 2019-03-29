@@ -1,7 +1,5 @@
 package rocks.zipcode.quiz5.objectorientation.account;
 
-import rocks.zipcode.quiz5.objectorientation.account.BankAccount;
-
 /**
  * @author leon on 27/12/2018.
  */

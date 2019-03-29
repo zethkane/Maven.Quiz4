@@ -13,6 +13,24 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class GetAllSpicesTest {
+
+    private void test(Supplier<List<Spice>> listSupplier) {
+        // given there is some food
+        Food food = new Food();
+
+        // given there is a list of spices to apply
+        List<Spice> expected = listSupplier.get();
+
+        // given spices are applied to the food
+        expected.forEach(spice -> food.applySpice(spice));
+
+        // when spice on food is evaluated
+        List<Spice> actual = food.getAllSpices();
+
+        // then
+        Assert.assertEquals(expected, actual);
+    }
+
     @Test
     public void test1() {
         // given
@@ -61,22 +79,5 @@ public class GetAllSpicesTest {
     public void test6() {
         // given
         test(() -> Arrays.asList((Spice) new Pepper()));
-    }
-
-    private void test(Supplier<List<Spice>> listSupplier) {
-        // given there is some food
-        Food food = new Food();
-
-        // given there is a list of spices to apply
-        List<Spice> expected = listSupplier.get();
-
-        // given spices are applied to the food
-        expected.forEach(spice -> food.applySpice(spice));
-
-        // when spice on food is evaluated
-        List<Spice> actual = food.getAllSpices();
-
-        // then
-        Assert.assertEquals(expected, actual);
     }
 }
