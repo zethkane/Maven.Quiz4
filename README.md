@@ -104,13 +104,13 @@
 	* The purpose of this class is to create.
 * **Methods to Complete**
 	* `String getMiddleElement(String[] values)`
-		* return `true`
-	* `Boolean removeMiddleElement(String[] values)`
-		* return `true`
+		* return the element at index `values.length/2`
+	* `String[] removeMiddleElement(String[] values)`
+		* return near-identical array with element at index `values.length/2` removed.
 	* `String getLastElement(String[] values)`
-		* return `true`
+		* return element at index `values.length-1`
 	* `String[] removeLastElement(String[] values)`
-		* return `true`
+		* return near-identical array with element at index `values.length-1` removed.
 
 
 
@@ -132,7 +132,7 @@
 ## Section 3 - Object Orientation
 ### Account
 * **Description**
-	* The purpose of this class is to 
+	* The purpose of this class is to create an implementation of the 
 * **Methods to Complete**
 	* `Long getId()`
 	* `void setId(Long id)`
