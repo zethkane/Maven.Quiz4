@@ -18,8 +18,8 @@ public class GetAllSpicesTest {
         // given there is some food
         Food food = new Food();
 
-        // given spices are applied to the food
-        expected.forEach(spice -> food.applySpice(spice));
+        // given each spice is applied to food
+        expected.forEach(food::applySpice);
 
         // when spice on food is evaluated
         List<Spice> actual = food.getAllSpices();
