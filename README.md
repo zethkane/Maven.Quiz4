@@ -159,10 +159,27 @@
 
 ### Employee
 * **Description**
-	* The purpose of this class is to 
+	* The purpose of this class is to create an implementation of a `Transactable` `Worker`.
 * **Methods to Complete**
 	* `BankAccount getBankAccount()`
 	* `void setBankAccount(BankAccount bankAccount)`
+
+	
+### Transactable
+* **Description**
+	* The purpose of this class is to
+* **Methods to Complete**
+	* `BankAccount getBankAccount()`
+	* `void setBankAccount(BankAccount bankAccount)`
+
+	
+### Worker
+* **Description**
+	* The purpose of this class is to
+* **Methods to Complete**
+	* `void deposit(Double amountToIncreaseBy)`
+	* `void withdrawal(Double amountToDecreaseBy)`
+	* `Double getBalance()`
 
 
 
