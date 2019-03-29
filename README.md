@@ -7,7 +7,7 @@
 		* `StringUtils`
 	2. arrays
 		* `ArrayUtils`
-	3. object orientation
+	3. object orientation - Difficult
 		* `Account`
 		* `BankAccount`
 		* `Bank`
