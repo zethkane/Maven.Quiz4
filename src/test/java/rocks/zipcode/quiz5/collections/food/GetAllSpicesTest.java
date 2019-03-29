@@ -14,12 +14,9 @@ import java.util.function.Supplier;
 
 public class GetAllSpicesTest {
 
-    private void test(Supplier<List<Spice>> listSupplier) {
+    private void test(List<Spice> expected) {
         // given there is some food
         Food food = new Food();
-
-        // given there is a list of spices to apply
-        List<Spice> expected = listSupplier.get();
 
         // given spices are applied to the food
         expected.forEach(spice -> food.applySpice(spice));
@@ -31,53 +28,54 @@ public class GetAllSpicesTest {
         Assert.assertEquals(expected, actual);
     }
 
+
     @Test
     public void test1() {
         // given
-        test(() -> Arrays.asList(
-                (Spice) new Pepper(),
-                (Spice) new Ginger(),
-                (Spice) new Curry()));
+        test(Arrays.asList((Spice) new Curry()));
     }
 
     @Test
     public void test2() {
         // given
-        test(() -> Arrays.asList(
-                (Spice) new Pepper(),
-                (Spice) new Pepper(),
-                (Spice) new Ginger(),
-                (Spice) new Curry()));
+        test(Arrays.asList((Spice) new Ginger()));
     }
-
 
     @Test
     public void test3() {
         // given
-        test(() -> Arrays.asList(
-                (Spice) new Pepper(),
-                (Spice) new Pepper(),
-                (Spice) new Ginger(),
-                (Spice) new Ginger(),
-                (Spice) new Curry()));
+        test(Arrays.asList((Spice) new Pepper()));
     }
-
 
     @Test
     public void test4() {
         // given
-        test(() -> Arrays.asList((Spice) new Curry()));
+        test(Arrays.asList(
+                (Spice) new Pepper(),
+                (Spice) new Ginger(),
+                (Spice) new Curry()));
     }
 
     @Test
     public void test5() {
         // given
-        test(() -> Arrays.asList((Spice) new Ginger()));
+        test(Arrays.asList(
+                (Spice) new Pepper(),
+                (Spice) new Pepper(),
+                (Spice) new Ginger(),
+                (Spice) new Curry()));
     }
+
 
     @Test
     public void test6() {
         // given
-        test(() -> Arrays.asList((Spice) new Pepper()));
+        test(Arrays.asList(
+                (Spice) new Pepper(),
+                (Spice) new Pepper(),
+                (Spice) new Ginger(),
+                (Spice) new Ginger(),
+                (Spice) new Curry()));
     }
+
 }

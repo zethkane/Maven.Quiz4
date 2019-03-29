@@ -13,7 +13,7 @@ import java.util.function.Supplier;
 
 public class GetSpiceCountTest {
 
-    public void test(Integer amountOfIngredients, Supplier<?> ingredientSupplier) {
+    private void test(Integer amountOfIngredients, Supplier<?> ingredientSupplier) {
         // we should expect `amountOfIngredients` to be fetched from mapping
         Integer expected = amountOfIngredients;
 
