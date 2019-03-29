@@ -1,4 +1,4 @@
-# Quiz 3
+# Quiz 4
 
 ## Overview
 * This quiz has 4 sections.
@@ -103,14 +103,14 @@
 * **Description**
 	* The purpose of this class is to create.
 * **Methods to Complete**
-	* `String capitalizeNthCharacter(String str, Integer indexToCapitalize)`
-		* return `str` with the character at `indexToCapitalize` capitalized
-	* `Boolean isCharacterAtIndex(String baseString, Character characterToCheckFor, Integer indexOfString)`
-		* return `true` if `baseString` has `characterToChexFor` at index of `indexOfString`.
-	* `String[] getAllSubStrings(String string)`
-		* return the _powerset_ of characters of `string`
-	* `Integer getNumberOfSubStrings(String input)`
-		* return the number of all substrings in `input`
+	* `String getMiddleElement(String[] values)`
+		* return `true`
+	* `Boolean removeMiddleElement(String[] values)`
+		* return `true`
+	* `String getLastElement(String[] values)`
+		* return `true`
+	* `String[] removeLastElement(String[] values)`
+		* return `true`
 
 
 

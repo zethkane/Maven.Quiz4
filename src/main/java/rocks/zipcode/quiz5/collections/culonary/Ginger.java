@@ -1,4 +1,4 @@
-package rocks.zipcode.quiz5.objectorientation;
+package rocks.zipcode.quiz5.collections.culonary;
 
 /**
  * @author leon on 27/12/2018.

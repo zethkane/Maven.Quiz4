@@ -2,7 +2,7 @@ package rocks.zipcode.quiz5.collections.bank;
 
 import org.junit.Assert;
 import org.junit.Test;
-import rocks.zipcode.quiz5.collections.Bank;
+import rocks.zipcode.quiz5.objectorientation.account.Bank;
 import rocks.zipcode.quiz5.objectorientation.account.BankAccount;
 
 public class AddBankAccountTest {

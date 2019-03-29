@@ -1,6 +1,4 @@
-package rocks.zipcode.quiz5.collections;
-
-import rocks.zipcode.quiz5.objectorientation.Spice;
+package rocks.zipcode.quiz5.collections.culonary;
 
 import java.util.List;
 import java.util.Map;

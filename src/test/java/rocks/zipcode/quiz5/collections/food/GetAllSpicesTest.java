@@ -2,11 +2,11 @@ package rocks.zipcode.quiz5.collections.food;
 
 import org.junit.Assert;
 import org.junit.Test;
-import rocks.zipcode.quiz5.collections.Food;
-import rocks.zipcode.quiz5.objectorientation.Curry;
-import rocks.zipcode.quiz5.objectorientation.Ginger;
-import rocks.zipcode.quiz5.objectorientation.Pepper;
-import rocks.zipcode.quiz5.objectorientation.Spice;
+import rocks.zipcode.quiz5.collections.culonary.Food;
+import rocks.zipcode.quiz5.collections.culonary.Curry;
+import rocks.zipcode.quiz5.collections.culonary.Ginger;
+import rocks.zipcode.quiz5.collections.culonary.Pepper;
+import rocks.zipcode.quiz5.collections.culonary.Spice;
 
 import java.util.Arrays;
 import java.util.List;

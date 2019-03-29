@@ -1,4 +1,4 @@
-package rocks.zipcode.quiz5.collections;
+package rocks.zipcode.quiz5.objectorientation.account;
 
 import rocks.zipcode.quiz5.objectorientation.account.BankAccount;
 
