@@ -1,4 +1,4 @@
-package rocks.zipcode.quiz5.objectorientation.spice;
+package rocks.zipcode.quiz5.collections.spice;
 
 import org.junit.Assert;
 import org.junit.Test;
