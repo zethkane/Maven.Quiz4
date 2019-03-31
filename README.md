@@ -168,7 +168,7 @@
 		
 ### Transactable
 * **Description**
-	* The purpose of this class is to ensure a class can `deposit`, `withdrawal`, and `getBalance`.
+	* The purpose of this interface is to ensure a class can `deposit`, `withdrawal`, and `getBalance`.
 * **Methods to Complete**
 	* `void deposit(Double amountToIncreaseBy)`
 	* `void withdrawal(Double amountToDecreaseBy)`
