@@ -15,7 +15,8 @@
 		* `Employee`
 		* `Worker`
 	4. collections
-		* `Food`
+		* `WordCounter`
+		* `Food` - Difficult
 		* `Curry`
 		* `Pepper`
 		* `Spice`
@@ -101,7 +102,7 @@
 
 ### ArrayUtils
 * **Description**
-	* The purpose of this class is to create.
+	* The purpose of this class is to create a utility for manipulating arrays.
 * **Methods to Complete**
 	* `String getMiddleElement(String[] values)`
 		* return the element at index `values.length/2`
@@ -132,7 +133,7 @@
 ## Section 3 - Object Orientation
 ### Account
 * **Description**
-	* The purpose of this class is to create an implementation of the 
+	* The purpose of this class is to create a model of an `Account`.
 * **Methods to Complete**
 	* `Long getId()`
 	* `void setId(Long id)`
@@ -141,7 +142,7 @@
 
 ### BankAccount
 * **Description**
-	* The purpose of this class is to 
+	* The purpose of this class is to create a subclass of an `Account` which implements `Transactable`.
 * **Methods to Complete**
 	* `void setBalance(Double double)`
 
@@ -149,7 +150,7 @@
 
 ### Bank
 * **Description**
-	* The purpose of this class is to 
+	* The purpose of this class is to create an encapsulation of a `Collection` of `BankAccount` objects.
 * **Methods to Complete**
 	* `BankAccount removeBankAccountByIndex(Integer indexNumber)`
 	* `void addBankAccount(BankAccount bankAccount)`
@@ -159,27 +160,27 @@
 
 ### Employee
 * **Description**
-	* The purpose of this class is to create an implementation of a `Transactable` `Worker`.
+	* The purpose of this class is to create an implementation of a `Worker` and `Transactable` which can `deposit`, `withdrawal`, and `getBalance`, of its composite `BankAccount`.
 * **Methods to Complete**
 	* `BankAccount getBankAccount()`
 	* `void setBankAccount(BankAccount bankAccount)`
 
-	
+		
 ### Transactable
 * **Description**
-	* The purpose of this class is to
-* **Methods to Complete**
-	* `BankAccount getBankAccount()`
-	* `void setBankAccount(BankAccount bankAccount)`
-
-	
-### Worker
-* **Description**
-	* The purpose of this class is to
+	* The purpose of this class is to ensure a class can `deposit`, `withdrawal`, and `getBalance`.
 * **Methods to Complete**
 	* `void deposit(Double amountToIncreaseBy)`
 	* `void withdrawal(Double amountToDecreaseBy)`
 	* `Double getBalance()`
+
+### Worker
+* **Description**
+	* The purpose of this interface is to ensure a class has `BankAccount`
+* **Methods to Complete**
+	* `BankAccount getBankAccount()`
+	* `void setBankAccount(BankAccount bankAccount)`
+
 
 
 
@@ -195,17 +196,26 @@
 <hr>
 
 ## Section 4 - Collections
-
+### Word Counter
+* **Description**
+	* The purpose of this class is to manage a mapping of `String` to `Integer`.
+	* The class should be able to identify the number times a word has occurred in a given `String` array
+		* A _word_ is a series of _characters_ delimited by _spaces_
+* **Methods to Complete**
+	* `Map<String, Integer> getWordCountMap()`
 
 	
 ### Food
 * **Description**
-	* The purpose of this class is to 
+	* The purpose of this class is to manage a mapping of `Spice` to `Integer`.
+	* The class should be able to identify the number of a specific spice-type applied to an instance of a food.
 * **Methods to Complete**
-	* `String getName()`
+	* `List<Spice> getAllSpices()`
+	* `<SpiceType extends Class<? extends Spice>> Map<SpiceType, Integer> getSpiceCount()`
+	* `void applySpice(Spice spice)`
 
-### Curry, Ginger, Pepper, Spice
+### Curry, Ginger, Pepper
 * **Description**
-	* The purpose of this class is to 
+	* The purpose of this class is to create a concrete implementation of a `Spice`
 * **Methods to Complete**
 	* `String getName()`
