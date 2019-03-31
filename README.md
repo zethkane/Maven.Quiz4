@@ -63,7 +63,7 @@
 
 ### StringUtils
 * **Description**
-	* The purpose of this class is to create utility methods to be used to assist in the completion of `WaveGenerator`.
+	* The purpose of this class is to create utility `String` methods
 * **Methods to Complete**
 	* `String getMiddleCharacter(String string)`
 		* return character at index `string.length()/2` as `String`.
