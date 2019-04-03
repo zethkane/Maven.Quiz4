@@ -207,8 +207,8 @@
 	
 ### Food
 * **Description**
-	* The purpose of this class is to manage a mapping of `Spice` to `Integer`.
-	* The class should be able to identify the number of a specific spice-type applied to an instance of a food.
+	* The purpose of this class is to manage a list of `Spice` object.
+	* The class should be able to identify the number of specific spice-type applied to an instance of a food.
 * **Methods to Complete**
 	* `List<Spice> getAllSpices()`
 	* `<SpiceType extends Class<? extends Spice>> Map<SpiceType, Integer> getSpiceCount()`
